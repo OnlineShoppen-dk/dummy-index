@@ -36,9 +36,10 @@ namespace dummy_index
                     autoAck: true,
                     consumer: consumer);
 
-                while (Console.ReadKey().Key != ConsoleKey.Q)
+                // Keep the application running
+                while (true)
                 {
-                    // Keep the application running
+                    // You can add any additional processing or sleeping logic here if needed
                 }
             }
         }
