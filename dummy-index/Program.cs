@@ -59,7 +59,7 @@ namespace dummy_index
             
             var nodes = new Uri[]
             {
-                new Uri("http://localhost:9200"),
+                new Uri("http://elasticsearch:9200"),
             };
         
             var pool = new StaticNodePool(nodes);
