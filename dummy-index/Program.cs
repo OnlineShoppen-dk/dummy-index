@@ -10,7 +10,7 @@ namespace dummy_index
         {
             var factory = new ConnectionFactory()
             {
-                HostName = "localhost", 
+                HostName = "rabbitqueue", 
                 UserName = "user", 
                 Password = "userpass"
             };
@@ -32,7 +32,7 @@ namespace dummy_index
                     var message = Encoding.UTF8.GetString(body);
                     Console.WriteLine(" [x] Received {0}", message);
                 };
-                channel.BasicConsume(queue: "productAddQueue",
+                channel.BasicConsume(queue: "productQueue",
                     autoAck: true,
                     consumer: consumer);
 
