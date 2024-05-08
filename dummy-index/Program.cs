@@ -14,7 +14,7 @@ namespace dummy_index
         {
             var factory = new ConnectionFactory()
             {
-                HostName = "localhost", 
+                HostName = "rabbitqueue", 
                 UserName = "user", 
                 Password = "userpass"
             };
