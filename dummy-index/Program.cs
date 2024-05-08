@@ -36,8 +36,10 @@ namespace dummy_index
                     autoAck: true,
                     consumer: consumer);
 
-                Console.WriteLine("Enter to exit.");
-                Console.ReadLine();
+                while (Console.ReadKey().Key != ConsoleKey.Q)
+                {
+                    // Keep the application running
+                }
             }
         }
     }
